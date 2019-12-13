@@ -1,1 +1,23 @@
 // Mixins Here
+.button(@bg-c, @f-c) {
+  background-color: @bg-c;
+  color: @f-c;
+  width: 150px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 3% 4%;
+  border-radius: 5px;
+  &:hover {
+    background-color: @f-c;
+    color: @bg-c;
+  }
+}
+
+.section-mobile() {
+    @media @mobile {
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    }
+}
