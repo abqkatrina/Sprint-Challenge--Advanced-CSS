@@ -1,1 +1,60 @@
 // Navigation code here
+
+  #nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+    nav {
+      background-color: @nav-bg;
+      border-radius: 1px solid @nav-border;
+      border-radius: 10px;
+      color: @nav-font;
+    // @media @mobile {
+    //
+    // }
+
+    #logo {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      // @media @mobile {
+      //
+      // }
+    } //close logo
+
+    #nav-list {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      margin: 1% auto;
+
+      @media @mobile {
+        width: 100%;
+        margin: 1% 0;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @nav-font;
+
+        @media @mobile {
+          margin: 1% 2%;
+          align-self: center;
+        }
+      } // close a
+    } //close nav-list
+  } //close nav
+} //close #nav
